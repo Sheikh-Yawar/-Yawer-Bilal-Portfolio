@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #780206;
+  background: -webkit-linear-gradient(to right, #061161, #780206);
+  background: linear-gradient(to right, #061161, #780206);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin-block: auto;
+  max-width: 70vw;
+
+  text-align: center;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  display: flex;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10%;
+}
+.right-side {
+  object-fit: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-side h1 {
+  padding-bottom: 1%;
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fff;
+}
+.left-side h1 span {
+  background-color: #e1306c;
+  text-shadow: 5px 5px 5px black;
+}
+.left-side p {
+  font-family: "Roboto", sans-serif;
+  padding: 0 11%;
+  line-height: 1.6rem;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.right-side img {
+  padding: 10%;
+  height: auto;
+  min-width: 200px;
+  max-width: 400px;
+  filter: drop-shadow(5px 5px 5px black);
+}
+
+.social-media a i {
+  padding: 1% 0 2.5% 2.5%;
+  font-size: 2rem;
+  color: #fff;
+}
+.social-media p {
+  padding-top: 4%;
+}
+
+.fa-instagram:hover {
+  color: #e1306c;
+}
+.fa-twitter:hover {
+  color: #00acee;
+}
+.fa-envelope:hover {
+  color: cadetblue;
+}
+@media screen and (max-width: 870px) {
+  .container {
+    min-width: fit-content;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+  .left-side h1 {
+    font-size: 3rem;
+    padding-bottom: 30px;
+  }
+
+  .left-side p {
+    font-size: 1.2rem;
+    padding: 0 7%;
+  }
+  .social-media {
+    padding-block: 30px;
+  }
+  .social-media a .fa-instagram {
+    color: #e1306c;
+  }
+  .social-media a .fa-twitter {
+    color: #00acee;
+  }
+  .social-media a .fa-envelope {
+    color: cadetblue;
+  }
+
+  .right-side img {
+    padding-bottom: 0;
+  }
+}
